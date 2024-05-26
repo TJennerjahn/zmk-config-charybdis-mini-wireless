@@ -95,6 +95,25 @@
             bindings = <&mo>, <&kp>;
         };
 
+		lm: layer_mod {
+			label = "LAYER_MOD";
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "hold-preferred";
+			tapping_term_ms = <200>;
+            #binding-cells = <2>;
+			bindings = <&kp>,<&to>;
+		};
+
+        td_grave: tap_dance_grave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_GRAVE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp GRAVE>,
+                <&kp TILDE>;
+        };
+
         td_bkt: tap_dance_bkt {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BKT";
