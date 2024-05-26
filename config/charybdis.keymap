@@ -12,6 +12,16 @@
 };
 
 / {
+    
+    macros {
+        excl_eq: excl_eq {
+            label = "EXCL_EQ";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL>;
+        };
+
+    };
     combos {
         compatible = "zmk,combos";
 
