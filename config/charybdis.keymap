@@ -76,22 +76,11 @@
             bindings = <&kp ESC>;
         };
 
-
-        /**
-     * Key press `TAB' when keys 17 (K) and 18 (L) are tapped.
-     */
-
         tab_key {
             timeout-ms = <20>;
             key-positions = <17 18>;
             bindings = <&kp TAB>;
         };
-
-        /**
-     * Key press `LCTRL + LCMD + Q` (lock screen in macOS) when keys 27 (,) and 28 (.) are tapped.
-     *
-     * Only enabled for layer 0 (base layer).
-     */
 
         lock_screen {
             timeout-ms = <20>;
@@ -130,10 +119,6 @@
             tapping-term-ms = <100>;
         };
 
-        /**
-     * Key press `[` on single tap or key press `]` on double tap.
-     */
-
         td_bkt: tap_dance_bkt {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BKT";
@@ -143,10 +128,6 @@
                 <&kp LBKT>,
                 <&kp RBKT>;
         };
-
-        /**
-     * Key press `(` on single tap or key press `)` on double tap.
-     */
 
         td_par: tap_dance_par {
             compatible = "zmk,behavior-tap-dance";
@@ -158,10 +139,6 @@
                 <&kp RPAR>;
         };
 
-        /**
-     * Key press `{` on single tap or key press `}` on double tap.
-     */
-
         td_brc: tap_dance_brc {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BRC";
@@ -171,10 +148,6 @@
                 <&kp LBRC>,
                 <&kp RBRC>;
         };
-
-        /**
-     * Key press `'` on single tap, hold LALT modifier on hold, or key press `"` on double tap.
-     */
 
         td_qt: tap_dance_qt {
             compatible = "zmk,behavior-tap-dance";
@@ -186,10 +159,6 @@
                 <&kp DQT>;
         };
 
-        /**
-     * Key press `!` on single tap or macro in `!=` on double tap.
-     */
-
         td_excl: tap_dance_excl {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EXCL";
@@ -199,10 +168,6 @@
                 <&kp EXCL>,
                 <&excl_eq>;
         };
-
-        /**
-     * Key press `.` on single tap or key press `,` on double tap.
-     */
 
         td_dot: td_dot {
             compatible = "zmk,behavior-tap-dance";
@@ -214,10 +179,6 @@
                 <&kp COMMA>;
         };
 
-        /**
-     * Key press `/` on single tap or key press `\` on double tap.
-     */
-
         td_slash: td_slash {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SLASH";
@@ -228,10 +189,6 @@
                 <&kp BACKSLASH>;
         };
 
-        /**
-     * Key press `*` on single tap or key press `#` on double tap.
-     */
-
         td_astrk: td_astrk {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ASTRK";
@@ -241,10 +198,6 @@
                 <&kp ASTRK>,
                 <&kp HASH>;
         };
-
-        /**
-     * Configuration for hold-tap behavior used for home-row modifiers.
-     */
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -257,10 +210,6 @@
                 <&kp>,
                 <&kp>;
         };
-
-        /**
-     * Configuration for hold-tap behavior used for umlauts.
-     */
 
         au: auto_umlauts {
             compatible = "zmk,behavior-hold-tap";
