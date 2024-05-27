@@ -212,7 +212,7 @@
 &kp ESC  &kp Q             &kp W             &kp E          &kp R               &kp T    &kp Y  &kp U               &kp I          &kp O              &kp P                 &kp BSPC
 &kp TAB  &kp A             &kp S             &kp D          &kp F               &kp G    &kp H  &kp J               &kp K          &kp L              &kp SEMI              &kp APOS
 &lt 5 LALT    &hm LCTRL Z       &hm LCMD X        &kp C          &kp V               &kp B    &kp N  &kp M               &kp COMMA      &hm LCMD DOT       &hm LCTRL SLASH       &lt 5 LALT
-                                             &none          &lt 1 SPACE    &kp LSHIFT    &mt LC(LS(LALT)) BSPC      &lt 2 ENTER
+                                             &lt 3          &lt 1 SPACE    &kp LSHIFT    &mt LC(LS(LALT)) BSPC      &lt 2 ENTER
             >;
         };
 
@@ -236,10 +236,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &kp F1  &kp F2   &kp F3   &kp C_VOLUME_UP      &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &bt BT_CLR
-&trans  &kp DEL  &kp F5  &kp F6   &kp F7   &kp C_VOLUME_DOWN    &out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp LALT
-&trans  &trans   &kp F9  &kp F10  &kp F11  &kp C_MUTE           &trans        &trans            &trans             &trans           &trans        &to 0
-                         &trans   &trans   &trans               &trans        &trans
+&trans  &trans   &kp F1  &kp F2         &kp F3        &trans         &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &kp C_VOLUME_UP
+&trans  &kp DEL  &kp F5  &mkp MCLK      &mkp LCLK     &mkp RCLK      &out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOLUME_DOWN
+&trans  &trans   &kp F9  &kp F10        &kp F11       &trans         &trans        &trans            &trans             &trans           &trans        &kp C_MUTE
+                         &trans         &to 0        &trans         &trans        &trans
             >;
         };
 
