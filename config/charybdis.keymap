@@ -248,7 +248,7 @@
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &MCLK  &mkp RCLK    &mkp LCLK  &RCLK
+                        &trans     &trans  &trans    &mkp LCLK  &RCLK
             >;
         };
 
