@@ -210,7 +210,7 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             bindings = <&sl>, <&mo>;
-        }
+        };
     };
 
     keymap {
