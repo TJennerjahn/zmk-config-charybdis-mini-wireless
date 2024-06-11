@@ -245,8 +245,8 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans  &trans     &trans      &trans         &trans  &trans            &trans             &trans           &trans        &kp C_VOLUME_UP
-&trans  &trans   &trans  &mkp MCLK  &mkp LCLK   &mkp RCLK      &trans  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOLUME_DOWN
+&to 0   &trans   &trans  &trans     &trans      &trans         &trans  &trans            &trans             &trans           &trans        &kp C_VOLUME_UP
+&to 4   &trans   &trans  &mkp MCLK  &mkp LCLK   &mkp RCLK      &trans  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOLUME_DOWN
 &trans  &trans   &trans  &trans     &trans      &trans         &trans  &trans            &trans             &trans           &trans        &kp C_MUTE
                          &trans     &to L0      &trans         &trans  &trans
             >;
