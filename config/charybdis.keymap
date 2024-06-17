@@ -18,7 +18,7 @@
 #define AU(keycode) &au LA(keycode) keycode  // Autoumlauts Macro 
 
 / {
-    chosen { zmk,matrix_transform = &default_transform; };
+    chosen { zmk,matrix_noneform = &default_noneform; };
 };
 
 &mt {
@@ -227,28 +227,28 @@
 
         layer_1 {
             bindings = <
-&trans  &td_excl        &kp AT          &kp DOLLAR       &td_astrk  &td_bkt     &kp N0           &kp N1         &kp N2      &kp N3  &td_dot     &kp F1
-&trans  &hm LCTRL AMPS  &hm LCMD UNDER  &hm LSHFT MINUS  &td_qt     &td_par     &kp PLUS         &kp N4         &kp N5      &kp N6  &kp COLON   &kp F10
-&trans  &kp PIPE        &kp PRCNT       &kp CARET        &td_grave  &td_brc     &kp EQUAL        &kp N7         &kp N8      &kp N9  &td_slash   &kp F20
+&none  &td_excl        &kp AT          &kp DOLLAR       &td_astrk  &td_bkt     &kp N0           &kp N1         &kp N2      &kp N3  &td_dot     &kp F1
+&none  &hm LCTRL AMPS  &hm LCMD UNDER  &hm LSHFT MINUS  &td_qt     &td_par     &kp PLUS         &kp N4         &kp N5      &kp N6  &kp COLON   &kp F10
+&none  &kp PIPE        &kp PRCNT       &kp CARET        &td_grave  &td_brc     &kp EQUAL        &kp N7         &kp N8      &kp N9  &td_slash   &kp F20
                                         &none            &kp BSPC   &kp LSHFT   &mt LC(LS(LALT)) BSPC           &to L3
             >;
         };
 
         layer_2 {
             bindings = <
-&trans      &none       &kp LC(LA(N1))  &kp LBKT  &kp RBKT  &none            &none      &none         &none       &none         &none  &kp DEL
-&trans      &kp LCTRL   &kp LC(LA(N4))  &kp LPAR  &kp RPAR  &none            &kp LEFT   &kp DOWN      &kp UP      &kp RIGHT     &none  &kp GRAVE
-&trans      &none       &kp LC(LA(N7))  &kp LBRC  &kp RBRC  &none            &none      &none         &none       &none         &none  &kp TILDE
-                                        &trans    &kp BSPC  &mo LSHFT        &kp SPACE  &to L0
+&none      &none       &kp LC(LA(N1))  &kp LBKT  &kp RBKT  &none            &none      &none         &none       &none         &none  &kp DEL
+&none      &kp LCTRL   &kp LC(LA(N4))  &kp LPAR  &kp RPAR  &none            &kp LEFT   &kp DOWN      &kp UP      &kp RIGHT     &none  &kp GRAVE
+&none      &none       &kp LC(LA(N7))  &kp LBRC  &kp RBRC  &none            &none      &none         &none       &none         &none  &kp TILDE
+                                        &none    &kp BSPC  &mo LSHFT        &kp SPACE  &to L0
             >;
         };
 
         layer_3 {
             bindings = <
-&to 0   &trans   &trans  &trans     &trans      &trans         &trans  &trans            &trans             &trans           &trans        &kp C_VOLUME_UP
-&to 4   &trans   &trans  &mkp MCLK  &mkp LCLK   &mkp RCLK      &trans  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOLUME_DOWN
-&trans  &trans   &trans  &trans     &trans      &trans         &trans  &trans            &trans             &trans           &trans        &kp C_MUTE
-                         &trans     &to L0      &trans         &trans  &trans
+&to 0   &none   &none  &none      &none       &none         &none  &none            &none             &none           &none        &kp C_VOLUME_UP
+&to 4   &none   &none  &mkp MCLK  &mkp LCLK   &mkp RCLK     &none  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOLUME_DOWN
+&none   &none   &none  &none      &none       &none         &none  &none            &none             &none           &none        &kp C_MUTE
+                         &none    &none       &none         &none  &none
             >;
         };
 
@@ -256,26 +256,26 @@
             bindings = <
 &kp ESC       &kp T             &kp Q             &kp W          &kp E               &kp R        &kp Y  &kp U               &kp I          &kp O              &kp P                 &kp BSPC
 &kp TAB       &kp G             &kp A             &kp S          &kp D               &kp F        &kp H  &kp J               &kp K          &kp L              &kp SEMI              &kp APOS
-&lt 5 LALT    &hm LCTRL X       &hm LCMD C        &kp V          &kp B               &kp Z        &kp N  &kp M               &kp COMMA      &hm LCMD DOT       &hm LCTRL SLASH       &lt 5 LALT
+&lt 6 LALT    &hm LCTRL X       &hm LCMD C        &kp V          &kp B               &kp Z        &kp N  &kp M               &kp COMMA      &hm LCMD DOT       &hm LCTRL SLASH       &lt 5 LALT
                                                   &mo 3          &lt 1 SPACE         &kp LSHIFT   &mt LC(LS(LALT)) BSPC      &lt 2 ENTER
             >;
         };
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans     &trans     &trans          &trans  &trans
+&none  &none  &none  &none     &none     &none          &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none     &none     &none          &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none     &none     &none          &none  &none  &none  &none  &none  &none
+                     &none     &none     &none          &none  &none
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &bt BT_CLR  &bt BT_SEL 0
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &trans      &bt BT_SEL 1
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &trans      &bt BT_SEL 2
-                        &trans  &trans  &trans    &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &kp F1  &kp F2  &kp F3  &bt BT_CLR  &bt BT_SEL 0
+&none  &none  &none  &none  &none  &none    &none  &kp F4  &kp F5  &kp F6  &none      &bt BT_SEL 1
+&none  &none  &none  &none  &none  &none    &none  &kp F7  &kp F8  &kp F9  &none      &bt BT_SEL 2
+                     &none  &none  &none    &none  &none
             >;
         };
     };
