@@ -18,7 +18,7 @@
 #define AU(keycode) &au LA(keycode) keycode  // Autoumlauts Macro 
 
 / {
-    chosen { zmk,matrix_noneform = &default_noneform; };
+    chosen { zmk,matrix_transform = &default_transform; };
 };
 
 &mt {
